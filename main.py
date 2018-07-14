@@ -30,6 +30,7 @@ def main():
     else:
         song = args.SONG_NAME
         result = search_song(song)
+        stream = get_youtube_streams(result.url)
         print("Song found in youtube...")
         result.display()
 
